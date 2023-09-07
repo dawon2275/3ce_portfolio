@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import url(../css/fonts.css);
+@import url(reset.css);
+
+html {font-size: 16px;}
+body { font:400 16px "Noto Sans KR", sans-serif; position: relative;}
+h2 {font-size: 2.188rem; margin-bottom: 0.938em; font-weight: 500;}
+
+/* ------------------------------------------------------- .fixedBanner------------------------------------------------ */
+.fixedBanner {
+    position: fixed;
+    bottom: 50px; right:30px;
+    width: 85px; height: 90px;
+    background: rgba(238, 127, 75, 0.856);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    text-align: center;
+}
+.fixedBanner a {display: block;}
+.fixedBanner a img { width: 41px; height: 41px; padding:8px 20px 0 20px;}
+.fixedBanner a p { display: inline-block;  font-size: 12px; color: #fff;}
+
+/* ------------------------------------------------------- .slideUp------------------------------------------------ */
+
+.slideUP {width: 100%;}
+.slideUP img { 
+    width: 100%;
+} 
+.slideUP ul {}
+.slideUP ul li { display: inline-block;}
+div#insAfter {
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+}
+/* ------------------------------------------------------- header------------------------------------------------ */
+header { position: relative; margin: 50px 20px; z-index: 300;}
+header .logo { 
+    margin-bottom: 50px;
+    width: 110px;
+}
+header .logo img {width: 110px;}
+
+header .icon {
+     position: absolute;
+     top: 0; right: 20px;
+     margin-right: 10px;
+}
+header .icon a { 
+    font-size: 25px; 
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+}
+header .icon .bar {display: none;}
+
+.mobileMenu {display: none;}
+
+
+/* --------------------------------------------------- gnb -------------------------------------------------- */
+
+header .gnb {
+    width: 75%;
+    text-align: center; 
+    font-family: 'Mulish', sans-serif;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+}
+header .gnb > ul {width: 100%; text-align: center;}
+header .gnb > ul > li {
+    float: left; 
+    width: 200px; height: 50px;
+    margin-left: 120px;
+}
+header .gnb > ul > li > a{
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 13px;
+}
+
+header .gnb > ul > li:hover > a {
+    background: #f7dfdf;
+    transition: all 0.3s;
+    /* font-size: 18px; */
+    font-weight: bold;
+    color: #fff;
+}
+header .gnb > ul > li:nth-child(2) {}
+header .gnb > ul li span {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 5px;
+    background:#e74f4f;
+    border-radius: 15px;
+    position: absolute;
+    top: 35%; left:42%;
+    transform: translate(-35%, -42%);
+}
+
+/* ------------------------------------------------------ gnb > sub----------------------------------------------- */
+header .gnb .sub { 
+    position: absolute;
+    left: 0; right: 0; top: 60px; 
+    height: 90px;
+    display:none;
+    text-align: right;
+}
+header .gnb .sub li {
+    float: left;
+    font-size: 17px;
+    width: 160px;
+    margin-top: 35px;
+}
+header .gnb .sub:last-child{
+
+}
+header .gnb .sub > li > a {
+    font-weight: 400;
+    display: block;
+    
+}
+header .gnb > ul > li:hover .sub {
+    background: #f7dfdf;
+    border-radius: 15px;
+    z-index: 120;
+}
+header .gnb .sub > li:hover > a {
+    font-size: 18px;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ------------------------------------------------------ mainLogin----------------------------------------------- */
+.mainLogin {width: 100%;}
+.mainLogin .snsLogin {
+position: relative;
+text-align: center;
+}
+.mainLogin .snsLogin ul { 
+    position: absolute;
+    top: 15%; left: 50%;
+    transform: translate(-50%, -15%);
+ }
+.mainLogin .snsLogin ul li {
+    float: left;
+    width: 50px;
+}
+.mainLogin .snsLogin p {
+    position: absolute;
+    top: 28%; left: 50%;
+    transform: translate(-50%, -28%);
+    color: rgba(0, 0, 0, 0.4);
+}
+.mainLogin .snsLogin .delivery {
+    text-align: center;
+    margin-top: 110px;
+}
+.Login  {text-align: center; margin: 50px 0; }
+.Login h2 { margin-bottom: 60px;}
+.Login input{
+    width: 450px; height: 45px;
+    margin-bottom: 15px;
+}
+.Login .btn-login, .btn-newLogin {
+    width: 147.5px; height: 35px;
+    margin: 5px 10px 0 0; 
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn-newLogin {margin-right: 0;}
+
+
+/* ------------------------------------------------------ footer----------------------------------------------- */
+footer {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+footer .info {margin: 50px 30px; font-size: 16px;}
+footer .info > ul > li { 
+    float: left; 
+    width: calc(100%/5 - 30px) ;
+    margin-left: 30px;
+    text-align: center;
+}
+footer .info .text{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer .info .infoSub li {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+footer .sns {text-align: center; border-bottom: 1px solid #000; padding-bottom: 25px;}
+footer .sns img { padding-left: 30px; width: 25px;}
+footer section {
+    text-align: center;
+    margin-top: 20px;
+}
+footer section p { font-size: 15px; color: rgba(0, 0, 0, 0.3);}
+

@@ -1,0 +1,471 @@
+@charset "utf-8";
+@import url(../css/fonts.css);
+@import url(reset.css);
+
+html {font-size: 16px;}
+body { font:400 16px "Noto Sans KR", sans-serif; position: relative;}
+h2 {font-size: 2.188rem; margin-bottom: 0.938em; font-weight: 500;}
+/* ----------------------------------------------------- modal -------------------------------------------------------- */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+}
+
+.modal .modalCont {
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; height: 600px;
+    background: #fff;
+    display: block;
+    padding: 30px;
+    text-align: center;
+}
+.modal button {
+    position: absolute;
+    bottom: 15px; right: 29px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.modal .modalCont img {width: 100%;}
+/* ------------------------------------------------------- .fixedBanner------------------------------------------------ */
+.fixedBanner {
+    position: fixed;
+    bottom: 50px; right:30px;
+    width: 85px; height: 90px;
+    background: rgba(238, 127, 75, 0.856);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    text-align: center;
+}
+.fixedBanner a {display: block;}
+.fixedBanner a img { width: 41px; height: 41px; padding:8px 20px 0 20px;}
+.fixedBanner a p { display: inline-block;  font-size: 12px; color: #fff;}
+
+
+
+/* ------------------------------------------------------- .slideUp------------------------------------------------ */
+
+/* .slideUP {width: 100%;}
+.slideUP img { 
+    width: 100%;
+} 
+.slideUP ul {}
+.slideUP ul li { display: inline-block;}
+div#insAfter {
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+  } */
+/* 자바스크립트 슬라이드 예정 */
+
+/* ------------------------------------------------------- header------------------------------------------------ */
+header { 
+    position: relative; 
+    margin: 50px 20px; 
+    z-index: 300;
+    
+}
+header .logo { 
+    width: 70%;
+    text-align: center;
+    border-bottom: 1px solid #000000a9;
+    margin-left: 300px;
+}
+header .logo img { padding-bottom: 50px;}
+
+header .icon {
+     position: absolute;
+     top: 35px; right: 20px;
+     margin-right: 10px;
+}
+header .icon a { 
+    font-size: 25px; 
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+}
+header .icon .bar {display: none;}
+
+.mobileMenu {display: none;}
+
+
+/* --------------------------------------------------- gnb -------------------------------------------------- */
+
+header .gnb {
+    width: 75%;
+    text-align: center; 
+    font-family: 'Mulish', sans-serif;
+    position: absolute;
+    top: 190px; left: 50%;
+    transform: translateX(-50%);
+}
+header .gnb ul li { 
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+}
+header .gnb ul > li > a {
+    position: relative;
+    display: block;
+    font-size: 0.9378vw;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+    color: #000;
+    overflow: hidden;
+    height: 100%;
+    letter-spacing: 0.06em;
+    line-height: 1.1em;
+} 
+header .gnb ul > li > a span {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+header .gnb ul > li > a .bot {
+    position: absolute;
+    left: 0; top: 65px;
+    top: 100%;
+    color: #035a1d;
+}
+
+/* ------------------------------------------------------ gnb > sub----------------------------------------------- */
+header .gnb .sub { 
+    position: absolute;
+    left: 0; right: 0; top: 80px; 
+    height: 90px;
+    display:none;
+    color: #fff;
+    text-align: right;
+}
+header .gnb .sub li {
+    float: left;
+    font-size: 17px;
+    width: 160px;
+    margin-top: 35px;
+    z-index: 800;
+}
+header .gnb .sub  li  a {
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+
+/* header .gnb .sub > li:hover > a {
+    font-size: 18px;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: #fff;
+    border-top: 3px solid #c08d4b;
+} */
+
+
+/* ----------------------------------------------------gnb > sub > sub2--------------------------------------- */
+/* header .gnb .sub2 {
+    width: 1000px;
+    display: none;
+    position: absolute;
+    top: 0; left: 230px;
+}
+header .gnb .sub2 li {
+    float: left;
+    width: 90px;
+    margin-left: 15px;
+}
+header .gnb .sub2 li a { font-size: 17px;}
+header .gnb .sub > li:hover .sub2 {}
+header .gnb .sub > li .sub2 li:hover a{} */
+
+/* ----------------------------------------------------- mainBg ------------------------------------------- */
+.main_bg{  
+    position: relative; 
+    margin-top: 70px; width: 100%;
+ }
+.main_bg .mainArea {
+    width: 100%; height: 700px;
+    overflow: hidden;
+}
+.main_bg .mainArea a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.main_bg .mainArea a img {
+    width: 100%;
+}
+.main_bg .page {
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 16px;
+    font-weight: 600;
+}
+.main_bg .btnPrev {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.616);
+}
+.main_bg .btnNext {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    width: 50px; height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+/* ---------------------------------------------------- eventBg --------------------------------------------------- */
+.eventBg {position: relative; margin-top: 100px;}
+
+.eventBg ul > img { 
+    position: absolute; 
+    top: 20px; right: 20px;
+}
+.eventBg li{ 
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: calc(100%/2);
+    height: 630px;
+
+}
+.eventBg li img { 
+    width: 100%; 
+    outline: 2px dashed #ffffff9d;
+    outline-offset:-20px ;
+    transition: all 0.8s;
+}
+.eventBg ul li a:hover img {transform: scale(1.1); }
+.eventBg .text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 40px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 300;
+    color: #f0f0f0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    text-align: center;
+}
+.eventBg .text2 img { 
+    position: absolute;
+    top: 15px; right: 15px;
+    width: 100px;
+}
+.eventBg .text2 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.856);
+    position: absolute;
+    bottom: 35px; left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.eventBg .text2 span {
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    background: #b96a6a;
+    color: #f7dfdf;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* --------------------------------------------------- product ----------------------------------------------------- */
+.product {position: relative; margin-top: 150px;}
+.product p { font-size: 15px;}
+.product ul {float: left;}
+.product > .prodList { 
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    width: 15%;
+/*     padding: 30px 20px; */
+    margin-left: -1px;
+    text-align: center;
+}
+.product > ul > li  {width: 100%;}
+.product .prodList li a {
+    display: block; 
+    padding: 25px 55px; 
+    position: relative; 
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.product .prodList > li:hover > a, .product .prodList li.on a{ 
+    background: #666666;
+    color: rgba(255, 255, 255, 0.788);
+    transition: all 0.3s;
+}
+/* --------------------------------------------- product 중 tab & swiper 영역 ----------------------------------------- */
+.tab_cont.on {display: block;}
+.swiperContainer {
+    position: relative;
+    height: 390px;
+    overflow: hidden;
+    display: none;
+    margin-left: 20px;
+}
+.swiper { 
+    width: 100%; height: 390px;
+    position: absolute;
+    top: 0; right: 0;
+}
+.swiper .swiper-wrapper {width: 100%;}
+.swiper .swiper-wrapper .swiper-slide {text-align: center; margin-left: 15px;}
+.swiper .swiper-wrapper .swiper-slide > a {display: block;}
+.swiper .swiper-wrapper .swiper-slide > a > img {position: relative; width: 90%;}
+/* swiper중  button 영역 */
+.swiper-button-next::after
+ {
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.774);
+    background: rgba(255, 255, 255, 0.616);
+    font-size: 30px  !important;
+    padding: 20px 18px;
+    color: #fff;
+    background:  rgba(196, 196, 196, 0.616);
+    border-radius: 50px;
+    position: absolute;
+    top: -50px; left: -20px;
+    z-index: 10;
+}
+.swiper-button-prev::after {
+
+   padding: 15px;
+   color: rgba(0, 0, 0, 0.774);
+   background: rgba(255, 255, 255, 0.616);
+   font-size: 30px  !important;
+   padding: 20px 18px;
+   color: #fff;
+   background:  rgba(196, 196, 196, 0.616);
+   border-radius: 50px;
+   position: absolute;
+   top: -50px; left: 0px;
+   z-index: 10;
+}
+
+/* swiper 중 title & img 영역 */
+.swiper .swiper-wrapper .swiper-slide .title  {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: left;
+    margin-left: 25px;
+}
+.swiper .swiper-wrapper .swiper-slide .text {
+    width: 250px;
+    font-weight: 600;
+}
+.swiper .swiper-wrapper .swiper-slide .price {
+    font-size: 13px;
+    color: #2e2e2e;
+    margin-top: 5px;
+}
+.swiper .swiper-wrapper .swiper-slide .sale {
+    font-size: 13px;
+    color: #b1b1b1;
+    padding-right: 5px;
+    text-decoration: line-through;
+}
+.swiper .like {
+    position: absolute;
+    top: 0; right: 50px;
+}
+.swiper .like > a > img {
+    width: 25px; height: auto;
+}
+
+
+/* --------------------------------------------------content영역------------------------------------------------ */
+
+.content {margin: 150px 150px; height: 600px; text-align: center;}
+.content > ul li { 
+    float: left;
+    width: 480px;
+    margin-left: 81px;
+}
+.content > ul:first-child li { margin-left: 0;}
+.content > ul:last-child li { margin-right: 0;}
+.content > ul li img {width: 480px;}
+.content .text { font-size: 18px; margin-top: 10px;}
+
+/* ----------------------------------------------------footer------------------------------------------------------ */
+
+footer {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+footer .info {margin: 50px 30px; font-size: 16px;}
+footer .info > ul > li { 
+    float: left; 
+    width: calc(100%/5 - 30px) ;
+    margin-left: 30px;
+    text-align: center;
+}
+footer .info .text{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer .info img {display: none;}
+
+footer .info .infoSub li {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+footer .sns {text-align: center; border-bottom: 1px solid #000; padding-bottom: 25px;}
+footer .sns img { padding-left: 30px; width: 25px;}
+footer section {
+    text-align: center;
+    margin-top: 20px;
+}
+footer section p { font-size: 15px; color: rgba(0, 0, 0, 0.3);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
